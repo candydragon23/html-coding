@@ -1,0 +1,166 @@
+body {
+    background-image: linear-gradient(to bottom, #ef9d3a 30%, #6f2ad7 100%);
+    font-family: 'Arial', sans-serif;
+    font-size: 22pt;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 30pt;
+    align-self: center;
+}
+h2 {
+    font-size: 24pt;
+    align-self: center;
+}
+img {
+    margin-left: 30px;
+}
+a {
+    height: 0;
+}
+span {
+    margin: 5px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contentInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button {
+    font-size: 24pt;
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: black, 10px, 10px inset;
+    margin-top: 20px;
+    align-items: center;
+}
+.nerd {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    right: 0;
+    top: -50px;
+}
+.nerdparent span {
+    height: fit-content;
+}
+.nerdparent {
+    height: 150px;
+}
+.credpos {
+    width: 224px;
+    height: 234px;
+}
+.centered {
+    align-content: center;
+}
+.banaba {
+    width: 390px;
+}
+.win {
+    width: 239px;
+    height: 234px;
+}
+.return {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.skip {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.card {
+    width: 300px;
+    height: 350px;
+}
+.point {
+    width: 300px;
+    height: 300px;
+    margin-top: 55px;
+}
+.bold {
+    font-weight: bold;
+}
+.step {
+    width: 300px;
+    height: 300px;
+}
+.card-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+.card-spans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-span{
+    width: 700px;
+    height: 350px;
+}
+.card-li {
+    width: 700px;
+}
+.centeredList {
+    align-items: center;
+}
+.nodecor {
+    list-style: none;
+    margin: 10px 0 10px;
+}
+.card-span-nerfed {
+    width: 700px;
+}
+.aligned{
+    align-self: center;
+}
+.jumpscare {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    font-size: 10pt;
+    background-color: red;
+    border: solid 3px black;
+}
+.jumpscareimage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.hidden {
+    display: none;
+}
+@media (max-width: 1000px) {
+    .card-span {
+        width: 600px;
+    }
+    .card-span-nerfed {
+        width: 600px;
+    }
+    .card-li {
+        width: 600px;
+    }
+    button {
+        width: 220px;
+    }
+}

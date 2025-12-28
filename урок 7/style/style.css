@@ -1,0 +1,37 @@
+body {
+    font-size: 18pt;
+    background-color: antiquewhite;
+    font-family: 'Colibri', sans-serif;
+}
+.raccoon1 {
+    order: 43;
+    flex-grow: 1;
+    background-image: url(./images/raccoon1.jpg);
+    /*align-self: flex-end;*/
+}
+.raccoon2 {
+    order: -5;
+    flex-grow: 2;
+    background-image: url(./images/raccoon2.jpg);
+}
+.raccoon3 {
+    flex-grow: 5;
+    background-image: url(./images/raccoon3.jpg);
+    order: 12;
+    /*align-self: flex-start;*/
+}
+.animal {
+    flex-basis: 200px;
+    min-height: 300px;
+    color: red;
+    min-width: 300px;
+    margin: 10px;
+}
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid blue;
+    height: 600px;
+}

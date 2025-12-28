@@ -1,0 +1,56 @@
+<html>
+<head>
+    <link href="./style/style.css"
+          rel="stylesheet"
+          type="text/css" />
+</head>
+<body>
+    <h1>Форма опроса</h1>
+    <form action="#" method="get" oninput="forrange.value = range.value">
+        <div>
+          <label>ФИО</label>
+          <input type="text" required />
+         </div>
+            <div>
+                <label>Укажите возраст</label>
+            </div>
+            <div>
+                <input type="radio" name="age" id="age18"/>
+                <label for="age18">От 18 до 30 лет</label>
+            </div>
+            <div>
+                <input type="radio" name="age" id="age31"/>
+                <label for="age31">От 31 до 45 лет</label>
+            </div>
+            <div>
+                <input type="radio" name="age" id="age46"/>
+                <label for="age46">От 46 до 65 лет</label>
+            </div>
+            <div>
+                <input type="radio" name="age" id="age66"/>
+                <label for="age66">От 66 до 80 лет</label>
+             </div>
+        <label class="sphere">Укажите род занятий</label>
+        <select>
+            <option>IT</option>
+            <option>Медицина</option>
+            <option>Педагогика</option>
+            <option>Машиностроение</option>
+            <option>Другое</option>
+        </select>
+        <input type="checkbox" checked />
+        <label>Хочу получать новости</label>
+        <div>
+        <label>Напишите отзыв</label>
+        <textarea rows="10" cols="40"></textarea>
+        </div>
+        <div>
+            <label>10</label>
+        <input type="range" min="10" max="100" id="range"/>
+            <label>100</label>
+            <output name="forrange">50</output>
+        </div>
+        <input type="submit" />
+    </form>
+</body>
+</html>

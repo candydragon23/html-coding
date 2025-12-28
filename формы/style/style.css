@@ -1,0 +1,46 @@
+body {
+    background-color: antiquewhite;
+    font-size: 18pt;
+    font-family: 'Colibri', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+input {
+    font-size: 18pt;
+    margin: 10px;
+}
+label {
+    font-size: 18pt;
+    margin: 10px;
+}
+select {
+    font-size: 18pt;
+    margin: 10px;
+}
+table {
+    margin: 0 auto;
+    width: 50%;
+    border: solid 3px blue;
+}
+legend {
+    font-size: 18pt;
+}
+output {
+    font-size: 18pt;
+    border: solid 1px green;
+    padding: 5px;
+}
+textarea {
+    font-size: 18pt;
+    resize: none;
+    margin-left: 10px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.margin {
+    margin-right: 41px;
+}

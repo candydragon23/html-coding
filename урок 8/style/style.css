@@ -1,0 +1,21 @@
+body {
+    background-color: antiquewhite;
+    font-size: 18pt;
+    font-family: 'Times New Roman', sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px auto 200px;
+    grid-template-rows: auto auto auto;
+    border: 2px red solid;
+    grid-gap: 10px;
+}
+.flex {
+    height: 200px;
+    border: solid 2px blue;
+}
+.scale {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border: solid 2px green;
+}

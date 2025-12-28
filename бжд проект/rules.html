@@ -1,0 +1,173 @@
+<html>
+<head>
+    <link href="./style/style.css" type="text/css" rel="stylesheet" />
+    <title>Правила игры</title>
+</head>
+<body>
+    <div class="flex-container">
+        <h1>Игра "Атака с воздуха"</h1>
+        <h2>Правила игры</h2>
+        <h2>Цель игры</h2>
+        <div class="content">
+            <span class="centered">Игроки совместно должны правильно отреагировать на воздушную угрозу, действуя по инструкциям безопасности, сохраняя спокойствие, помогая окружающим и не допуская опасных решений.</span>
+            <img src="./images/why.png">
+        </div>
+        <h2>Участники</h2>
+        <div class="content">
+            <ul class="centered">
+                <li><span class="bold">Количество игроков</span>: 4–5</li>
+                <li><span class="bold">Ведущий</span>: 1 (не участвует в принятии решений, только оценивает)</li>
+            </ul>
+            <img src="./images/group.png" />
+        </div>
+        <h2>Комплект игры</h2>
+        <div class="content">
+            <ul>
+                <li>Карта-схема корпуса</li>
+                <li>Карточки ролей (5 шт)</li>
+                <li>Колода карточек событий</li>
+                <li>Колода карточек действий</li>
+                <li>Фишки готовности (зеленые)</li>
+                <li>Фишки риска (красные)</li>
+                <li>Фишки NPC (5 шт)</li>
+                <li>Памятка для ведущего</li>
+            </ul>
+        </div>
+        <div class="card-div">
+            <div class="card-spans">
+                <span class="centered card-span"><span class="bold">Староста группы</span> — снижает стресс и панику, помогает при массовом беспокойстве.</span>
+                <span class="centered card-span"><span class="bold">Преподаватель</span> — даёт чёткие команды, ускоряет принятие решений.</span>
+                <span class="centered card-span"><span class="bold">Медик</span> — помогает NPC и игрокам, снимает последствия паники.</span>
+                <span class="centered card-span"><span class="bold">Координатор безопасности</span> — получает подсказки от системы и подтверждает безопасные действия.</span>
+                <span class="centered card-span"><span class="bold">Студент-информатор</span> — предупреждает команду о надвигающихся событиях.</span>
+            <div class="content">
+                <div class="contentInner">
+                    <span class="bold">Фишки готовности</span>
+                    <span>Показывают, что команда действует правильно.</span>
+                    <span>Выдаются за:</span>
+                    <ul>
+                        <li>Соблюдение инструкций</li>
+                        <li>Командную работу</li>
+                        <li>Своевременные решения</li>
+                    </ul>
+                    <span>Чем больше готовности, тем выше шанс победы.</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentInner">
+                    <span class="bold">Фишки риска</span>
+                    <span>Показывают опасные ошибки.</span>
+                    <span>Выдаются за:</span>
+                    <ul>
+                        <li>Панику без контроля</li>
+                        <li>Неверные действия</li>
+                        <li>Игнорирование NPC</li>
+                        <li>Ложные сообщения о безопасности</li>
+                    </ul>
+                    <span>При превышении лимита риска команда проигрывает.</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentInner">
+                    <span class="bold">NPC (неигровые персонажи)</span>
+                    <span>NPC - это люди в корпусе, которым нужна помощь.</span>
+                    <span>Каждого NPC нужно:</span>
+                    <ul>
+                        <li>Найти</li>
+                        <li>Успокоить (если требуется)</li>
+                        <li>Перевести в безопасную зону</li>
+                    </ul>
+                    <span>Оставленные NPC увеличивают риск.</span>
+                </div>
+            </div>
+            </div>
+            <div class="cards">
+                <img src="./images/starosta.png" class="card"/>
+                <img src="./images/prepod.png" class="card"/>
+                <img src="./images/medic.png" class="card"/>
+                <img src="./images/coordinator.png" class="card"/>
+                <img src="./images/informator.png" class="card"/>
+                <img src="./images/readyPoint.png" class="point"/>
+                <img src="./images/riskPoint.png" class="point"/>
+                <img src="./images/npc.png" class="point"/>
+            </div>
+        </div>
+        <h2>Подготовка к игре</h2>
+        <div class="contentInner centeredList">
+            <ul>
+                <li>Разложите карту корпуса в центре стола</li>
+                <li>Все игроки начинают в одной стартовой зоне</li>
+                <li>Фишки NPC размещаются в разных точках корпуса (по указанию ведущего)</li>
+                <li>Фишки готовности и риска кладутся рядом</li>
+                <li>Ведущий берёт колоду событий и памятку</li>
+                <li class="bold nodecor">Каждый игрок</li>
+                <li>Получает карточку роли</li>
+                <li>Получает 3 случайные карты действий</li>
+        </ul>
+        </div>
+        <h2>Шаг 1. Событие.</h2>
+        <div class="content">
+            <div class="contentInner">
+                <span>Ведущий открывает и зачитывает 1 карту действия.</span>
+                <span>Событие описывает ситуацию в здании:</span>
+                <ul>
+                    <li>Оповещение</li>
+                    <li>Угрозу</li>
+                    <li>Панику</li>
+                    <li>Прерятствие</li>
+                    <li>Комбинацию нескольких проблем</li>
+                </ul>
+            </div>
+            <img src="./images/step1.png" class="step"/>
+        </div>
+        <h2>Шаг 2. Обсуждение.</h2>
+        <div class="content">
+            <div class="contentInner">
+                <span>Игроки совместно обсуждают, что делать.</span>
+                <span>Рекомендуемое время обсуждения — до 60 секунд.</span>
+            </div>
+            <img src="./images/step2.png" class="step"/>
+        </div>
+        <h2>Шаг 3. Действие.</h2>
+        <div class="content">
+            <span class="centered card-span">Каждый игрок может: сыграть 1 карту действия ИЛИ использовать способность своей роли. Действия выполняются одновременно, но логически обсуждаются заранее.</span>
+            <img src="./images/step3.png" class="step"/>
+        </div>
+        <h2>Шаг 4. Оценка ведущего.</h2>
+        <div class="content">
+            <div class="contentInner">
+                <span class="card-span-nerfed">Ведущий сверяется с памяткой и:</span>
+                <ul>
+                    <li class="card-li">Добавляет зелёные фишки готовности за верные решения</li>
+                    <li class="card-li">Добавляет красные фишки риска за ошибки, промедление или опасные действия</li>
+                </ul>
+            </div>
+            <img src="./images/step4.png" class="step"/>
+        </div>
+        <h2>Шаг 5. Перемещение и NPC.</h2>
+        <div class="content">
+            <div class="contentInner">
+                <span class="card-span-nerfed">Если ситуация решена:</span>
+                <ul>
+                    <li class="card-li">Группа может переместиться по карте</li>
+                    <li class="card-li">Игроки могут помочь NPC и перевести их в безопасную зону</li>
+                </ul>
+                <span class="card-span-nerfed">Если NPC оставлены без помощи — добавляется риск.</span>
+            </div>
+            <img src="./images/step5.png" class="step"/>
+        </div>
+        <button onclick="window.location.href = './notes.html';" class="aligned">Продолжить</button>
+        <button onclick="window.location.href = './index.html';" class="return">Назад</button>
+        <button onclick="window.location.href = './notes.html';" class="skip">Пропустить</button>
+        <button class="jumpscare" onclick="scare()">Подозрительный предмет</button>
+        <img src="./images/jumpscare.png" class="jumpscareimage hidden" id="jumpscare"/>
+    </div>
+    <script>
+        var scare = function () {
+            image = document.getElementById('jumpscare');
+            image.classList.remove('hidden');
+            setTimeout(function () { image.classList.add('hidden') }, 2000);
+        }
+    </script>
+</body>
+</html>

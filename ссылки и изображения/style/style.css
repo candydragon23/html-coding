@@ -1,0 +1,58 @@
+body {
+    font-family: 'Colibri', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    font-size: 36pt;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 75%;
+    margin-bottom: 35%;
+    margin-top: 7%;
+}
+tr, td {
+    padding: 14px;
+    border: solid 3px;
+    border-color: white;
+    color: black;
+    font-size: 18pt;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.up {
+    text-decoration: none;
+    font-size: 24pt;
+    color: white;
+    border: solid 3px red;
+    padding: 5px;
+}
+.borderless {
+    border: none;
+}
+.back {
+    text-decoration: none;
+    font-size: 48pt;
+    color: white;
+}
+figcaption {
+    font-size: 18pt;
+    text-align: center;
+}
+figure {
+    text-align: center;
+}
+.bottom {
+    margin-bottom: 30%;
+}
+p {
+    padding: 10px;
+}

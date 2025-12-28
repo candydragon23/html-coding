@@ -1,0 +1,31 @@
+body {
+    background-color: antiquewhite;
+    font-size: 18pt;
+    font-family: 'Times New Roman', sans-serif;
+}
+label, input {
+    margin: 10px;
+    font-size: 18pt;
+}
+input[type="text"] {
+    width: 400px;
+}
+.red {
+    color: red;
+    list-style-type: square;
+}
+.green {
+    color: green;
+}
+.darktheme {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.violet {
+    color: violet;
+    list-style-type: square;
+}
+.blueviolet {
+    color: blueviolet;
+}

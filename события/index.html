@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>События</title>
+    <link href="./style/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="flex-box">
+        <div>
+            <label onmousedown="showhold(); changeToBlue()" onmouseup="hide(); changeToBlack()">Котик 1 (удерживать)</label>
+            <img src="./style/images/cat1.png" />
+        </div>
+        <div>
+            <label onmousedown="showhold(); changeToBlue()" onmouseup="hide(); changeToBlack()">Котик 2 (удерживать)</label>
+            <img src="./style/images/cat2.png" />
+        </div>
+        <div>
+            <label onmousedown="showhold(); changeToBlue()" onmouseup="hide(); changeToBlack()">Котик 3 (удерживать)</label>
+            <img src="./style/images/cat3.png" />
+        </div>
+        <div>
+            <label onmousedown="changeToBlue()" onmouseup="changeToBlack()" onclick="showclick()" >Котик 4 (нажать)</label>
+            <img src="./style/images/cat4.png" />
+        </div>
+        <div>
+            <label onmousedown="changeToBlue()" onmouseup="changeToBlack()" onclick="showclick()">Котик 5 (нажать)</label>
+            <img src="./style/images/cat5.png" />
+        </div>
+        <div>
+            <label onmousedown="changeToBlue()" onmouseup="changeToBlack()" onclick="showclick()">Котик 6 (нажать)</label>
+            <img src="./style/images/cat6.png" />
+        </div>
+    </div>
+    <script>
+        var showclick = function () {
+            image = event.target.parentElement.children[1];
+            if (image.style.visibility == "hidden") {
+                image.style.visibility = "visible";
+            }
+            else {
+                image.style.visibility = "hidden";
+            }
+        }
+        var showhold = function () {
+            image = event.target.parentElement.children[1];
+            image.style.visibility = "visible";
+        }
+        var hide = function () {
+            image = event.target.parentElement.children[1];
+            image.style.visibility = "hidden";
+        }
+        var changeToBlue = function () {
+            text = event.target;
+            text.style.color = "blue";
+        }
+        var changeToBlack = function () {
+            text = event.target;
+            text.style.color = "black";
+        }
+    </script>
+</body>
+</html>

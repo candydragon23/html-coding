@@ -1,0 +1,33 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18pt;
+}
+.sphere{
+    display: block;
+}
+select{
+    display: block;
+    font-size: 18pt;
+}
+input {
+    font-size: 18pt;
+}
+input[type="submit"]{
+    display: block;
+}
+form{
+    border: 2px solid;
+    border-color: blue;
+    width: 55%;
+    margin: 0 auto;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+}
+textarea{
+    font-size: 18pt;
+    resize: none;
+
+}

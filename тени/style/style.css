@@ -1,0 +1,100 @@
+body {
+    background-color: lightblue;
+    font-size: 18pt;
+    font-family: 'Times New Roman';
+    color: white;
+}
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+.grid-box>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+.outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 250px;
+    border: dashed 3px white;
+    border-radius: 5px;
+}
+.shadow1 {
+    position: relative;
+    background-color: palevioletred;
+    transform-style: preserve-3d;
+}
+.shadow2 {
+    position: relative;
+    background-color: yellow;
+    transform-style: preserve-3d;
+}
+.shadow3 {
+    background-color: lime;
+    box-shadow: 0px 35px 20px -25px forestgreen, 0px -35px 20px -25px forestgreen;
+}
+.shadow4 {
+    background-color: aquamarine;
+    box-shadow: 40px 0px 15px -25px cadetblue, -40px 0px 15px -25px cadetblue;
+}
+.subshadow1 {
+    width: 250px;
+    position: absolute;
+    bottom: 9px;
+    left: 25px;
+    rotate: -4deg;
+    height: 30px;
+    box-shadow: 0 10px 10px 5px darkred;
+    transform: translateZ(-10px);
+}
+.subshadow2 {
+    width: 250px;
+    position: absolute;
+    bottom: 9px;
+    right: 25px;
+    rotate: 4deg;
+    height: 30px;
+    box-shadow: 0 10px 10px 5px darkred;
+    transform: translateZ(-10px);
+}
+.subshadow3 {
+    width: 450px;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    rotate: -4deg;
+    height: 30px;
+    box-shadow: 0 15px 10px 5px darkgoldenrod;
+    transform: translateZ(-10px);
+}
+.shadow1:hover {
+    box-shadow: 0 0 20px 20px darkred;
+}
+.shadow1:hover .subshadow1 {
+    box-shadow: none;
+}
+.shadow1:hover .subshadow2 {
+    box-shadow: none;
+}
+.shadow2:hover .subshadow3 {
+    box-shadow: none;
+}
+.shadow2:hover {
+    box-shadow: 0 0 20px 20px darkgoldenrod;
+}
+.shadow3:hover {
+    box-shadow: 0 0 20px 20px forestgreen;
+}
+.shadow4:hover {
+    box-shadow: 0 0 20px 20px cadetblue;
+}

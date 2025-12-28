@@ -1,0 +1,110 @@
+body {
+    background-color: forestgreen;
+    font-size: 18pt;
+    font-family: 'Times New Roman', sans-serif;
+}
+.container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+.card1, .card2, .card3, .card4, .card5 {
+    border: solid 1px black;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    margin: 10px;
+}
+.card1::before, .card1::after {
+    content: "A \2665";
+}
+.card2::before, .card2::after {
+    content: "3 \2660";
+}
+.card3::before, .card3::after {
+    content: "9 \2666";
+}
+.card4::before, .card4::after {
+    content: "Q \2663";
+}
+.card5::before, .card5::after {
+    content: "K \2665";
+}
+.card1::before, .card1::after, .card2::before, .card2::after, .card3::before, .card3::after, .card4::before, .card4::after, .card5::before, .card5::after {
+    display: block;
+    font-size: 24pt;
+    width: 20px;
+    padding: 5px;
+}
+.card1::before, .card1::after, .card3::before, .card3::after, .card5::before, .card5::after {
+    color: red;
+}
+.card1::after, .card2::after, .card3::after, .card4::after, .card5::after {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    rotate: 180deg;
+}
+.card1, .card2, .card3, .card4, .card5 {
+    position: absolute;
+    font-size: 100px;
+    text-align: center;
+}
+.card1, .card3, .card5 {
+    color: red;
+}
+.card1 {
+    rotate: -25deg;
+    left: 350px;
+    bottom: -75px;
+}
+.card5 {
+    rotate: 25deg;
+    right: 350px;
+    bottom: -75px;
+}
+.card2 {
+    rotate: -10deg;
+    bottom: -25px;
+    left: 500px;
+}
+.card4 {
+    bottom: -25px;
+    rotate: 10deg;
+    right: 500px;
+}
+.card3 {
+    bottom: -15px;
+}
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover {
+    background-color: lightyellow;
+}
+.card3:hover {
+    bottom: 0px;
+    z-index: 2;
+}
+.card1:hover {
+    bottom: -60px;
+    left: 335px;
+    z-index: 2;
+}
+.card2:hover {
+    bottom: -10px;
+    left: 485px;
+    z-index: 2;
+}
+.card4:hover {
+    bottom: -10px;
+    right: 485px;
+    z-index: 2;
+}
+.card5:hover {
+    bottom: -60px;
+    right: 335px;
+    z-index: 2;
+}

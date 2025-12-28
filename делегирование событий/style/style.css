@@ -1,0 +1,40 @@
+body {
+    background-color: antiquewhite;
+    font-size: 18pt;
+    font-family: 'Times New Roman', sans-serif;
+}
+li {
+    margin: 5px;
+    width: auto;
+    cursor: pointer;
+    width: max-content;
+    user-select: none;
+}
+ul {
+    list-style: none;
+}
+.hide::before {
+    content: "+";
+    margin-right: 5px;
+}
+.show::before {
+    content: '-';
+    margin-right: 5px;
+}
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+table {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    border-collapse: collapse;
+    max-height: 400px;
+}
+td {
+    border: solid 2px black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}

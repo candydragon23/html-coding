@@ -1,0 +1,128 @@
+<html>
+<head>
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <title>Делегирование событий</title>
+</head>
+<body>
+    <div class="flex-box">
+    <ul id="list">
+        <li>
+            Машины
+            <ul>
+                <li>
+                    Легковые
+                    <ul>
+                        <li>Corolla</li>
+                        <li>Pajero</li>
+                    </ul>
+                </li>
+                <li>
+                    Грузовые
+                    <ul>
+                        <li>Камаз</li>
+                        <li>Белаз</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Самолеты
+            <ul>
+                <li>
+                    Пассажирские
+                    <ul>
+                        <li>Боинг-777</li>
+                        <li>Ан-24</li>
+                    </ul>
+                </li>
+                <li>
+                    Грузовые
+                    <ul>
+                        <li>Super Guppy</li>
+                        <li>Airbus A300-600ST Beluga</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Мотоциклы
+            <ul>
+                <li>
+                    Дорожные
+                    <ul>
+                        <li>GR 500 21/18</li>
+                        <li>SHARMAX RST 501</li>
+                    </ul>
+                </li>
+                <li>
+                    Внедорожные
+                    <ul>
+                        <li>Kawasaki KX450</li>
+                        <li>Honda CRF450R</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </div>
+    <script>
+        for (let li of list.querySelectorAll('li')) {
+            let span = document.createElement('span');
+            span.classList.add('show');
+            li.prepend(span);
+            span.append(span.nextSibling);
+        }
+        list.onclick = function (event) {
+            if (event.target.tagName != 'SPAN') return;
+            let childList = event.target.parentNode.querySelector('ul');
+            if (!childList) return;
+            childList.hidden = !childList.hidden;
+            if (childList.hidden) {
+                event.target.classList.add('hide');
+                event.target.classList.remove('show');
+            }
+            else {
+                event.target.classList.add('show');
+                event.target.classList.remove('hide');
+            }
+        }
+        const randomColor = () => {
+            const red = Math.floor(Math.random() * 256);
+            const green = Math.floor(Math.random() * 256);
+            const blue = Math.floor(Math.random() * 256);
+            return `rgb(${red}, ${green}, ${blue})`;
+        }
+        table = document.querySelector('table');
+        table.onclick = function (event) {
+            if (event.target.tagName != 'TD') return;
+            event.target.style.backgroundColor = randomColor();
+        }
+    </script>
+</body>
+</html>

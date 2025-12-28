@@ -1,0 +1,65 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Colibri', sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+th {
+    text-align: left;
+    font-size: 24px;
+    background-color: #3D73D0;
+    color: white;
+    padding: 14px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+tr, td {
+    padding: 14px;
+}
+.points {
+    width: 20%;
+}
+.number {
+    width: 10%;
+}
+.bold {
+    font-weight: bold;
+}
+.secrow {
+    color: gray;
+    background-color: #E5E5E5;
+}
+.green {
+    background-color: #97D7A5;
+}
+.red {
+    background-color: #E89797;
+}
+.roundright {
+    border-bottom-right-radius: 10px;
+}
+.roundleft {
+    border-bottom-left-radius: 10px;
+}
+.middle {
+    text-align: center;
+}
+.border {
+    border-bottom: solid 3px;
+    border-color: #767677;
+}
+.changecolor:hover {
+    color: blue;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: 12px;
+    color: #767677;
+    font-family: 'Times New Roman', sans-serif;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

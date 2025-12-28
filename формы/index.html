@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Опрос первокурсников</title>
+    <link href="./style/style.css"
+          rel="stylesheet"
+          type="text/css" />
+</head>
+<body>
+    <h1>Опрос первокурсников</h1>
+    <form action="#" method="get" oninput="forrange.value = range.value">
+        <table>
+            <tr>
+                <td>
+                    <label class="margin">Укажите ФИО</label>
+                    <input type="text" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Укажите возраст</label>
+                    <input type="text" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Укажите ваше направление</label>
+                    <select>
+                        <option>Прикладная информатика</option>
+                        <option>Управление персоналом</option>
+                        <option>Реклама и связи с общественностью</option>
+                        <option>Сервис</option>
+                        <option>Туризм</option>
+                        <option>Гостиничное дело</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Где вы проживаете?</legend>
+                        <div>
+                            <input type="radio" name="home" id="home1" checked />
+                            <label for="home1">Дома</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="home" id="home2" />
+                            <label for="home2">Общежитие</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="home" id="home3" />
+                            <label for="home3">Снимаю квартиру/комнату</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="home" id="home4" />
+                            <label for="home4">У родственников/знакомых</label>
+                        </div>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Какие предметы вам нравятся больше всего?</legend>
+                        <div>
+                            <input type="checkbox" id="opt1"/>
+                            <label for="opt1">Программирование</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="opt2" />
+                            <label for="opt2">Языки разметки сетевого контента</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="opt3" />
+                            <label for="opt3">Математика</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="opt4" />
+                            <label for="opt4">Информатика</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="opt5" />
+                            <label for="opt5">Другое</label>
+                        </div>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr><td><label>Оцените качество компьютерных классов</label></td></tr>
+            <tr>
+                <td>
+                    <label>1</label>
+                    <input type="range" min="1" max="10" id="range" />
+                    <label>10</label>
+                    <output name="forrange">6</output>
+                </td>
+            </tr>
+            <tr><td><label>Напишите что бы вы хотели улучшить в процессе обучения</label></td></tr>
+            <tr><td><textarea rows="10" cols="40"></textarea></td></tr>
+            <tr>
+                <td>
+                    <label>Введите вашу почту для обратной связи</label>
+                    <input type="email" />
+                </td>
+            </tr>
+            <tr><td><input type="submit" /></td></tr>
+        </table>
+    </form>
+</body>
+</html>

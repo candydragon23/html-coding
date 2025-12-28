@@ -1,0 +1,32 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18pt;
+    color: #0C2920;
+}
+table {
+    border: 3px solid #81440a;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 70%;
+}
+td,th {
+    border: 1px solid black;
+    padding: 14px;
+    width: 33%;
+}
+.align{
+    text-align: center;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.white{
+    background-color: white;
+    color: black;
+}
+.gray{
+    background-color: gray;
+    color: black;
+}

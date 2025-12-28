@@ -1,0 +1,19 @@
+body {
+    font-family: 'Colibri', sans-serif;
+    background-color: #AFEAE9;
+    font-size: 18pt;
+}
+.bold {
+    font-weight: bold;
+    color: #D70606;
+}
+.italic {
+    font-style: italic;
+    color: #1EA823;
+}
+ul.square {
+    list-style-type: square;
+}
+.main {
+    color: #666C1A;
+}

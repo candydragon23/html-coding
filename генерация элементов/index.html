@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Создание списка</title>
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <label>Модели автомобилей</label>
+    <div>
+        <input type="text" id="text"/>
+        <input type="button" value="Отправить!" onclick="getText()" />
+    </div>
+    <input type="button" class="darktheme" value="Темная тема" onclick="modeToggle()" />
+    <label>Введите свои любимые модели автомобилей и нажмите отправить для создания списка!</label>
+    <ul id="list">
+        
+    </ul>
+    <script>
+        count = 0;
+        toggle = 0;
+        var getText = function () {
+            text = document.getElementById("text").value;
+            if (text != '') {
+                let li = document.createElement('li');
+                ul = document.getElementById('list');
+                li.innerHTML = text;
+                ul.appendChild(li);
+                if (count % 2 == 0) {
+                    if (toggle == 1) {
+                        li.classList.add("violet");
+                    }
+                    else {
+                        li.classList.add("red");
+                    }
+                }
+                else {
+                    if (toggle == 1) {
+                        li.classList.add("blueviolet");
+                    }
+                    else {
+                        li.classList.add("green");
+                    }
+                }
+                count++;
+            }
+        }
+        var modeToggle = function () {
+            if (toggle == 0) {
+                darkMode();
+                toggle = 1;
+            }
+            else {
+                lightMode();
+                toggle = 0;
+            }
+        }
+        var darkMode = function () {
+            document.body.style.backgroundColor = "#000000C4";
+            document.body.style.color = "white";
+            document.getElementsByClassName('darktheme')[0].value = 'Светлая тема';
+            for (var i = 0; i < count; i++) {
+                li = ul.children[i];
+                if (i % 2 == 0) {
+                    li.classList.remove("red");
+                    li.classList.add("violet");
+                }
+                else {
+                    li.classList.remove("green");
+                    li.classList.add("blueviolet");
+                }
+            }
+        }
+        var lightMode = function () {
+            document.body.style.backgroundColor = 'antiquewhite';
+            document.body.style.color = 'black';
+            document.getElementsByClassName('darktheme')[0].value = 'Темная тема';
+            for (var i = 0; i < count; i++) {
+                li = ul.children[i];
+                if (i % 2 == 0) {
+                    li.classList.add("red");
+                    li.classList.remove("violet");
+                }
+                else {
+                    li.classList.add("green");
+                    li.classList.remove("blueviolet");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

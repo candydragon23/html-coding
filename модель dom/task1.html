@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="windows-1251">
+</head>
+
+<body>
+	<div>Пользователи:</div> 
+	<ul class="my-list"> 
+	  <li id="first">Федор</li> 
+	  <li>Вероника</li> 
+	</ul> 
+	<script>
+		var value = document.querySelectorAll('ul > li:last-child');
+		console.log(value[0].innerHTML);
+		let table = document.createElement('table');
+		for (let i = 0; i < 3; i++) {
+			let tr = document.createElement('tr');
+			for (let i = 0; i < 3; i++) {
+				let td = document.createElement('td');
+				td.style.width = "50px";
+				td.style.height = "50px";
+				td.style.border = "solid 1px black";
+				tr.appendChild(td);
+			}
+			table.appendChild(tr);
+		}
+		for (let i = 0; i < 3; i++) {
+			table.rows[i].cells[i].style.backgroundColor = "yellow";
+		}
+		table.style.borderCollapse = "collapse";
+		document.body.appendChild(table);
+	</script>
+</body>
+
+</html>

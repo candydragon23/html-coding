@@ -1,0 +1,21 @@
+body{
+    background-color: #FF7F00;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18pt;
+}
+.author{
+    font-size: 22pt;
+    color: #8742D6;
+    text-align: center;
+    border: 1px solid #FFFF00;
+    padding: 10px;
+}
+.important{
+    color: #FD0006;
+    font-style: italic;
+    font-weight: bold;
+}
+.yay{
+    font-size: 100pt;
+    color: #FD0006;
+}

@@ -1,0 +1,36 @@
+body {
+    font-size: 18pt;
+    background-color: antiquewhite;
+    font-family: 'Colibri', sans-serif;
+}
+header, footer {
+    background-color: orange;
+    display: table;
+    width: 100%;
+    border: solid 5px #CA7A01;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+main {
+    display: table;
+    border-spacing: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+}
+.cell {
+    background-color: aquamarine;
+    border: solid 2px darkgreen;
+    height: 400px;
+    display: table-cell;
+}
+.headercell {
+    display: table-cell;
+    border: solid 2px darkred;
+    border-radius: 20px;
+    background-color: red;
+    height: 150px;
+}

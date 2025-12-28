@@ -1,0 +1,82 @@
+body {
+    background-color: antiquewhite;
+    font-size: 18pt;
+    font-family: 'Times New Roman', sans-serif;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    position: relative;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+p {
+    margin: 5px;
+}
+.cost {
+    font-size: 24pt;
+    padding: 5px;
+    display: flex;
+    color: magenta;
+    white-space: nowrap;
+}
+.discount {
+    color: white;
+    background-color: magenta;
+}
+.gray {
+    color: gray;
+}
+.star {
+    color: orange;
+}
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    padding-top: 6px;
+    width: stretch;
+}
+.tag {
+    background-color: magenta;
+    color: white;
+    padding: 2px;
+    border: solid 1px black;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.flex:hover .quicklook{
+    visibility: revert;
+}
+.flex:hover .buy {
+    visibility: revert;
+}
+.quicklook {
+    visibility: hidden;
+    display: flex;
+    background-color: rgb(0 0 0 / 0.5);
+    padding: 5px;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    box-sizing: border-box;
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    justify-content: center;
+}
+.buy {
+    visibility: hidden;
+    display: flex;
+    padding: 5px;
+    font-size: 30pt;
+    background-color: red;
+    border: solid 1px black;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+}

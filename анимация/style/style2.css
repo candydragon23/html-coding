@@ -1,0 +1,40 @@
+body {
+    font-size: 18pt;
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', sans-serif;
+}
+.box {
+    width: 700px;
+    height: 200px;
+    border: solid 2px black;
+}
+.button {
+    margin: 25px;
+    margin-left: 30px;
+    position: relative;
+}
+.buttontext {
+    padding-left: 40px;
+}
+.button input {
+    display: none;
+}
+.buttontext::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: solid 2px black;
+    position: absolute;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+input:checked + .buttontext::before {
+    width: 30px;
+    height: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid blue;
+    rotate: -45deg;
+    transition: all 0.3s ease;
+}

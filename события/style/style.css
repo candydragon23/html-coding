@@ -1,0 +1,22 @@
+body {
+    background-color: antiquewhite;
+    font-size: 24pt;
+    font-family: 'Times New Roman', sans-serif;
+}
+.flex-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex-box>div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+img {
+    visibility: hidden;
+}
+label {
+    text-align: center;
+    cursor: pointer;
+}
